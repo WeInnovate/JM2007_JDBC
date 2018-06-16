@@ -1,4 +1,4 @@
-package com.jm2007.jdbc;
+package com.jm2007.jdbc.ddl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
