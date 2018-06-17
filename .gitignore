@@ -13,7 +13,6 @@
 # Package Files #
 *.jar
 *.war
-*.nar
 *.ear
 *.zip
 *.tar.gz
@@ -23,6 +22,14 @@
 hs_err_pid*
 /bin/
 
-
+.settings
 .classpath
 .project
+
+/bin
+/build
+/WebContent/WEB-INF/lib
+/temp
+/log
+/resources/output
+/target
