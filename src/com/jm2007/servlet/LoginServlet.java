@@ -34,10 +34,12 @@ public class LoginServlet extends HttpServlet {
 		String password = request.getParameter("password");
 
 		if (username.equalsIgnoreCase(password)) {
+			request.setAttribute("msg", "Success");
 			RequestDispatcher rd = request.getRequestDispatcher("profile");
 			rd.forward(request, response);
 		} else {
-			response.sendRedirect("login.html");
+			System.out.println("I'm in else blo...");
+			response.sendRedirect("index.html");
 		}
 
 	}

@@ -23,9 +23,11 @@ public class ProfileServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		String msg = (String) request.getAttribute("msg");
+		
 		String username = request.getParameter("email");
 		PrintWriter out = response.getWriter();
-		out.print("Login successfull!!");
+		out.print("Login "+msg+"!!");
 		out.print("Hello " + username);
 	}
 

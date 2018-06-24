@@ -17,10 +17,12 @@
     <servlet-name>MyHello</servlet-name>
     <url-pattern>/hello</url-pattern>
   </servlet-mapping>
-  
   <context-param>
-  <param-name>institute</param-name>
-  <param-value>InfoCampus</param-value>
+    <param-name>institute</param-name>
+    <param-value>InfoCampus</param-value>
   </context-param>
-  
+  <context-param>
+    <param-name>tableCreationRequired</param-name>
+    <param-value>Yes</param-value>
+  </context-param>
 </web-app>
